@@ -3,7 +3,10 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
 const _ = require('lodash');
-const msg91 = require("msg91")("102552A7F8ZWnVs5698d323", "MTADMY", 4);
+
+let config = require('./config/config.json');
+const msg91 = require("msg91")(process.env.msg91Key, process.env.msg91Subject, 4);
+
 
 let {mongoose} = require('./db/mongoose');
 let {Candidate} = require('./models/candidate');

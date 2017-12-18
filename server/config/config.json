@@ -1,0 +1,9 @@
+{
+  "development": {
+    "PORT": 3000,
+    "MONGODB_URI": "mongodb://localhost:27017/MetademySendSms",
+    "JWT_SECRET": "q43o876vb40n9vpcow70n845v"
+  },
+  "msg91Key":"102552A7F8ZWnVs5698d323",
+  "msg91Subject":"MTADMY"
+}
