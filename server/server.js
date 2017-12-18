@@ -44,14 +44,14 @@ app.get('/getcandidate', (req, res) => {
 app.post('/sendmessage', (req, res) => {
   let body = _.pick(req.body, ['mobile', 'message']);
 
-  /*msg91.send(body.mobile, body.message, function (err, response) {
+  msg91.send(body.mobile, body.message, function (err, response) {
    if (err) {
    res.status(400).send(err);
    }
    res.send({response});
-   });*/
+   });
 
-  res.send({Message: body.message});
+  //res.send({Message: body.message});
 });
 
 app.get('*', (req, res) => {
