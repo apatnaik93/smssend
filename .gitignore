@@ -8,6 +8,7 @@
 # dependencies
 /node_modules
 /server/config
+/src/config
 
 # IDEs and editors
 /.idea
